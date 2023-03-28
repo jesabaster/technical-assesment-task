@@ -1,0 +1,96 @@
+.form {
+    position: relative;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    gap: 45px 40px;
+    padding-top: 55px;
+    color: #8D8D8D;
+    overflow: hidden;
+}
+
+.subjectWrapper {
+    grid-column: span 2 / span 2;
+}
+
+.subjectTitle {
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.subjectList {
+    display: flex;
+    font-size: 12px;
+    gap: 20px;
+    color: #000000;
+}
+
+.subjectList li {
+    display: flex;
+    align-items: center;
+}
+
+.subjectList li svg {
+    margin-right: 10px;
+}
+
+.messageInput {
+    grid-column: span 2 / span 2;
+}
+
+.formButton {
+    width: 215px;
+    height: 55px;
+    grid-column-start: 2;
+    justify-self: end;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.letterImage {
+    pointer-events: none;
+    position: absolute;
+    bottom: -50px;
+    right: 80px;
+}
+
+@media (max-width: 480px) {
+    .form {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 0;
+        padding-bottom: 63px;
+    }
+
+    .subjectWrapper, .messageInput {
+        grid-column: auto;
+    }
+
+    .formButton {
+        width: 100%;
+        height: 38px;
+        grid-column-start: 1;
+    }
+
+    .subjectList {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        gap: 15px 20px;
+    }
+
+    .messageInput, .subjectList {
+        margin-bottom: 5px;
+    }
+
+    .letterImage {
+        width: 105px;
+        bottom: -15px;
+        right: 45%
+    }
+}

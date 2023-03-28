@@ -1,0 +1,9 @@
+.generalLayout {
+    padding-top: 40px;
+}
+
+@media (max-width: 480px) {
+    .generalLayout {
+        padding-top: 0;
+    }
+}

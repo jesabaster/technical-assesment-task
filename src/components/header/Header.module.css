@@ -1,0 +1,22 @@
+.header {
+    margin-bottom: 75px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin-bottom: 0px;
+    }
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+    background-color: #000000;
+    opacity: 0.3;
+}

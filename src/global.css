@@ -1,0 +1,29 @@
+/*Defining global style rules*/
+
+.main-container {
+    padding-right: 122px;
+    padding-left: 122px;
+    width: 1440px;
+}
+
+.wide-container {
+    width: 1440px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+.main-container, .wide-container {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+    .main-container, .wide-container {
+        width: 360px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+

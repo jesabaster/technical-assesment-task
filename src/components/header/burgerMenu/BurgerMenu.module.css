@@ -1,0 +1,42 @@
+.burgerMenuWrapper {
+    position: relative;
+    width: 18px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.burgerMenu {
+    display: none;
+}
+
+.burgerMenu, .burgerMenu:before, .burgerMenu:after {
+    background-color: #000000;
+    height: 2px;
+    border-radius: 4px 0 0 4px;
+}
+
+.burgerMenu, .burgerMenu:before {
+    width: 100%;
+}
+
+.burgerMenu:before, .burgerMenu:after {
+    content: "";
+    position: absolute;
+}
+
+.burgerMenu:before {
+    top: 0;
+}
+
+.burgerMenu:after {
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
+
+@media (max-width: 480px) {
+    .burgerMenu {
+        display: block;
+    }
+}
