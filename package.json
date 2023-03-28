@@ -2,6 +2,7 @@
   "name": "technical-assesment-task",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://jesabaster.github.io/technical-assesment-task",
   "main": "./src/index.tsx",
   "scripts": {
     "start": "webpack serve --mode development --config webpack.config.ts",
