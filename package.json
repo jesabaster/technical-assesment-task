@@ -6,13 +6,16 @@
   "main": "./src/index.tsx",
   "scripts": {
     "start": "webpack serve --mode development --config webpack.config.ts",
-    "build": "webpack --mode production --config webpack.config.ts"
+    "build": "webpack --mode production --config webpack.config.ts",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "clsx": "^1.2.1",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.8",
