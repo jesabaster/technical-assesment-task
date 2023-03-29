@@ -13,7 +13,7 @@
 .burgerMenu, .burgerMenu:before, .burgerMenu:after {
     background-color: #000000;
     height: 2px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 1px 0 0 1px;
 }
 
 .burgerMenu, .burgerMenu:before {
@@ -35,7 +35,7 @@
     width: 50%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .burgerMenu {
         display: block;
     }

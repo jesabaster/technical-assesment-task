@@ -24,7 +24,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .contactUs {
         margin-bottom: 50px;
         padding-top: 95px;

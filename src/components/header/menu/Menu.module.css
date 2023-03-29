@@ -38,7 +38,7 @@
     margin-right: 8px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .menuContent {
         display: none;
         padding: 30px 20px;

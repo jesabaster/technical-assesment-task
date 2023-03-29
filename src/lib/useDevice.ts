@@ -7,9 +7,10 @@ export const useDevice = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const isDesktop = window.outerWidth > 430;
+      const isDesktop = window.innerWidth > 1024;
       setIsDesktop(isDesktop);
     };
+
 
     window.addEventListener('resize', handleResize);
     handleResize();

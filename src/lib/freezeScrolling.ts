@@ -1,7 +1,7 @@
 export const freezeScrolling = () => {
-  document.body.style.overflowY = 'hidden';
-}
+  document.getElementsByTagName('html')[0].style.overflowY = 'hidden';
+};
 
 export const unfreezeScrolling = () => {
-  document.body.style.overflowY = '';
-}
+  document.getElementsByTagName('html')[0].style.overflowY = '';
+};

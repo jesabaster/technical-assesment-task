@@ -14,10 +14,9 @@
 
 .main-container, .wide-container {
     margin: 0 auto;
-    overflow-x: hidden;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .main-container, .wide-container {
         width: 360px;
         padding-left: 20px;

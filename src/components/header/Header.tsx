@@ -1,9 +1,9 @@
 import styles from './Header.module.css';
 import { useDevice } from "lib/useDevice";
 import { useEffect, useState } from "react";
-import { MobileMenu } from "./mobileMenu";
 import { Menu } from "./menu";
 import { freezeScrolling, unfreezeScrolling } from "lib/freezeScrolling";
+import { MobileMenu } from "./mobileMenu";
 
 type HeaderProps = {
   scrollToFeatures: () => void;
@@ -36,7 +36,7 @@ export const Header = ({ scrollToFeatures }: HeaderProps) => {
       <div className="wide-container">
         <Menu scrollToFeatures={scrollToFeatures} closeMenu={closeMenu} isMenuOpen={isMenuOpen} />
         {!isDesktop && <MobileMenu openMenu={openMenu} />}
-        {!isDesktop && isMenuOpen && <div className={styles.overlay}/>}
+        {!isDesktop && isMenuOpen && <div className={styles.overlay} />}
       </div>
     </header>
   );

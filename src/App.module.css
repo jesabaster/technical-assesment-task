@@ -2,7 +2,7 @@
     padding-top: 40px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .generalLayout {
         padding-top: 0;
     }

@@ -60,7 +60,7 @@
     right: 80px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .form {
         grid-template-columns: 1fr;
         gap: 20px;

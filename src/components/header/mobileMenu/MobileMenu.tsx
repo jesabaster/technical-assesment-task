@@ -9,8 +9,12 @@ type MobileMenuProps = {
 export const MobileMenu = ({ openMenu }: MobileMenuProps) => {
   return (
     <div className={styles.mobileMenu}>
-      <MainMobileLogo />
-      <BurgerMenu onClick={openMenu} />
+      <div className="wide-container">
+        <div className={styles.mobileMenuContent}>
+          <MainMobileLogo />
+          <BurgerMenu onClick={openMenu} />
+        </div>
+      </div>
     </div>
   );
 };

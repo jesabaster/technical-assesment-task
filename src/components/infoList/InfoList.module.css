@@ -23,7 +23,7 @@
     margin-bottom: 50px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .infoListItem {
         margin-bottom: 20px;
     }
