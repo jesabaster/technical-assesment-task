@@ -38,6 +38,12 @@
     right: 0;
 }
 
+@media (max-width: 1200px) {
+    .contactInformation {
+        width: 400px;
+    }
+}
+
 @media (max-width: 1024px) {
     .contactInformation {
         height: 397px;

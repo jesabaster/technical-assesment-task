@@ -60,16 +60,37 @@
     right: 80px;
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1348px) {
     .form {
+        padding-top: 0;
         grid-template-columns: 1fr;
         gap: 20px;
-        padding-top: 0;
-        padding-bottom: 63px;
+    }
+
+    .letterImage {
+        display: none;
     }
 
     .subjectWrapper, .messageInput {
         grid-column: auto;
+    }
+
+    .formButton {
+        grid-column-start: 1;
+        justify-self: start;
+    }
+
+    .subjectList {
+        display: grid;
+        grid-template-columns: max-content;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .form {
+        padding-bottom: 63px;
     }
 
     .formButton {
@@ -79,7 +100,6 @@
     }
 
     .subjectList {
-        display: grid;
         grid-template-columns: max-content max-content;
         gap: 15px 20px;
     }
@@ -89,6 +109,7 @@
     }
 
     .letterImage {
+        display: block;
         width: 105px;
         bottom: -15px;
         right: 45%

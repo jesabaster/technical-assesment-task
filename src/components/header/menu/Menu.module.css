@@ -38,6 +38,12 @@
     margin-right: 8px;
 }
 
+@media (max-width: 1348px) {
+    .navigationList {
+        gap: 30px;
+    }
+}
+
 @media (max-width: 1024px) {
     .menuContent {
         display: none;
